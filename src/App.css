@@ -1,7 +1,9 @@
+
+
+
 .App {
   text-align: center;
-  background-image: url("code_and_music_bg.svg");
-  background-color: #282c34;
+  background: url("code_and_music_bg.svg") 0 0 repeat fixed,radial-gradient(circle, #313838 0, #141617 100%);
 }
 
 .App-logo {
@@ -10,8 +12,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App {
+    animation:fancypants;
+    animation-duration:30s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
   }
 }
 
@@ -29,11 +34,14 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@keyframes fancypants {
+  0% {
+    background-position-x:0;
+    background-position-y:0
   }
   to {
-    transform: rotate(360deg);
+    background-position-x:350px;
+    background-position-y:350px
   }
 }
