@@ -1,9 +1,11 @@
 
-
+body {
+  background: radial-gradient(circle, #313838 0, #141617 100%);
+}
 
 .App {
   text-align: center;
-  background: url("code_and_music_bg.svg") 0 0 repeat fixed,radial-gradient(circle, #313838 0, #141617 100%);
+  background: url("code_and_music_bg.svg") 0 0 repeat fixed;
 }
 
 .App-logo {
@@ -32,6 +34,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+section {
+  background-color: rgb(100% 100% 100% / 0.07);
+  backdrop-filter: blur(10px);
+
+  padding: 6rem 3rem;
+  color: #edebeb;
+  border-radius: 1rem;
 }
 
 
