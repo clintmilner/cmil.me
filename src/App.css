@@ -1,20 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:300,900);
 
-body {
+html {
+  font-family: Raleway,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
   background: radial-gradient(circle, #313838 0, #141617 100%);
+}
+body {
+  min-height: 100dvh;
+  background: url("code_and_music_bg.svg") 0 0 repeat fixed;
+}
+
+nav a,p {
+  font-family: Permanent Marker,cursive;
 }
 
 .App {
   text-align: center;
-  background: url("code_and_music_bg.svg") 0 0 repeat fixed;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100%;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App {
+  body {
     animation:fancypants;
     animation-duration:30s;
     animation-timing-function:linear;
@@ -23,7 +33,6 @@ body {
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,16 +44,55 @@ body {
 .App-link {
   color: #61dafb;
 }
-
-section {
+nav {
   background-color: rgb(100% 100% 100% / 0.07);
   backdrop-filter: blur(10px);
+  height: 60px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: 100%;
+}
+nav a:hover {
+  background: rgba(255,255,255, 0.46);
+}
+section {
+
 
   padding: 6rem 3rem;
   color: #edebeb;
   border-radius: 1rem;
+  mix-blend-mode: difference;
 }
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 12rem;
+  line-height: 1rem;
+  color: #fff;
 
+  /*color: transparent;*/
+  /*-webkit-text-stroke: 1px #fff;*/
+
+
+  /*text-shadow: 1px 1px 0px rgba(0,0,0, 0.05);*/
+  /*outline: 1px black;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*filter: drop-shadow(1px 1px 20px red);*/
+}
+/*h1:hover {*/
+/*  color: #ffffff05;*/
+/*}*/
+p{
+  color: rgba(255, 255, 255, 0.7);
+}
 
 @keyframes fancypants {
   0% {
