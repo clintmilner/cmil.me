@@ -9,7 +9,11 @@ function App() {
         {/*<a href={'#'}>About</a>*/}
         {/*<a href={'#'}>Experience</a>*/}
         {/*<a href={'#'}>Contact</a>*/}
-        <code>Built by &lt;Clint /&gt;</code>
+        {/*<code>Built by &lt;Clint /&gt;</code>*/}
+        <code
+          aria-label={'spread the love'}
+          dangerouslySetInnerHTML={{ __html: `{...♥️}` }}
+        />
       </nav>
       <header className="App-header">
         <section>
