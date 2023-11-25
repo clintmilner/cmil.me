@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './styles.css'
 // https://main.ds369j9rpttlk.amplifyapp.com/
 function App() {
   return (
